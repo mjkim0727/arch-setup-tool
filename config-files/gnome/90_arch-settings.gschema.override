@@ -1,0 +1,48 @@
+[org.gnome.desktop.interface]
+clock-format='12h'
+clock-show-date=true
+clock-show-weekday=true
+cursor-theme='Bibata-Modern-Ice'
+document-font-name='Noto Sans 11'
+font-antialiasing='rgba'
+gtk-theme='adw-gtk3'
+show-battery-percentage=true
+
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
+
+[org.gnome.desktop.sound]
+event-sounds=true
+input-feedback-sounds=true
+theme-name='Yaru'
+
+[org.gnome.desktop.wm.preferences]
+titlebar-uses-system-font=false
+titlebar-font='Cantarell Bold 11'
+
+[org.gnome.login-screen]
+logo='/usr/share/pixmaps/archlinux-text-logo.png'
+
+[org.gnome.shell]
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'blur-my-shell@aunetx', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.manjaro.pamac.manager.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Polari.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Todo.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.gThumb.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Settings.desktop']
+
+[org.gnome.shell.extensions.arch-update]
+package-manager='pamac-manager'
+
+[org.gnome.Terminal.Legacy.Settings]
+theme-variant='dark'
+
+[org.gnome.Terminal.Legacy.Profile]
+background-transparency-percent=20
+bold-is-bright=true
+cell-width-scale=1.15
+use-system-font=false
+use-transparent-background=true
+font='SauceCodePro Nerd Font 11'
+
+[org.gtk.gtk4.Settings.FileChooser]
+sort-directories-first=true
+
+[org.gtk.settings.file-chooser]
+sort-directories-first=true
