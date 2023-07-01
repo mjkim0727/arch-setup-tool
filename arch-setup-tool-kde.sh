@@ -13,7 +13,9 @@ echo "Setting Base System..."
     mkinitcpio -P linux;
 
 echo "Installing KDE..."
-    pacman -S plasma plasma-wayland-session kpat knights gnuchess ksudoku kmines akregator kaccounts-provider akonadi kmail kate kontact zanshin kaddressbook korganizer kalendar kjots knotes kdepim-addons elisa gwenview digikam kdeconnect sshfs firefox firefox-i18n-ko dolphin dolphin-plugins konsole khelpcenter htop lm_sensors lsof strace iio-sensor-proxy rsync kup flatpak --noconfirm;
+    
+    pacman -S ttf-dejavu ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family noto-fonts noto-fonts-cjk ttf-hack noto-fonts-emoji --noconfirm;
+    pacman -S plasma plasma-wayland-session kpat knights gnuchess ksudoku kmines akregator kaccounts-provider akonadi kmail kate kontact zanshin kaddressbook korganizer kalendar kjots knotes kdepim-addons elisa gwenview digikam kdeconnect sshfs firefox firefox-i18n-ko dolphin dolphin-plugins konsole khelpcenter ktorrent kimageformats ark p7zip unrar unace unarchiver libreoffice-fresh libreoffice-fresh-ko firewalld htop lm_sensors lsof strace iio-sensor-proxy rsync kup flatpak packagekit-qt5 vlc --noconfirm;
     echo -e "\nGTK_IM_MODULE=fcitx5\nQT_IM_MODULE=fcitx5\nXMODIFIERS=@im=fcitx5\nMOZ_ENABLE_WAYLAND=1\n"  >> /etc/environment;
 
 echo "Setting Up Chaotic-AUR..."
