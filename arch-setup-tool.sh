@@ -3,7 +3,7 @@
 echo "Setting Base System..."
 
     sed -i '/%wheel ALL=(ALL) ALL/s/^#//' /etc/sudoers;
-    pacman -S mariadb plymouth --noconfirm;
+    pacman -S mariadb plymouth wireplumber pipewire-pulse pipewire-alsa pipewire-jack sof-firmware --noconfirm;
     mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql;
     cp ./config-files/mkinitcpio.conf /etc;
     cp ./config-files/pacman.conf /etc;
@@ -14,8 +14,8 @@ echo "Setting Base System..."
 
 echo "Installing GNOME..."
 
-    pacman -S ttf-dejavu ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family noto-fonts noto-fonts-cjk noto-fonts-emoji --noconfirm;
-    pacman -S gnome aisleriot gnome-chess gnuchess gnome-mines gnome-robots gnome-sudoku quadrapassel drawing lollypop celluloid gthumb gnome-browser-connector gnome-notes endeavour vlc qt5ct kvantum ibus ibus-hangul ibus-anthy file-roller p7zip unrar unarchiver unace gnome-tweaks evolution evolution-spamassassin highlight system-config-printer gnome-shell-extension-appindicator libappindicator-gtk3 deja-dup rsync htop lm_sensors lsof strace iio-sensor-proxy gnome-tour gnome-initial-setup power-profiles-daemon firefox-ko firefox-i18n-ko libreoffice-fresh-ko libreoffice-fresh ufw gufw polari --noconfirm;
+    pacman -S ttf-dejavu ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-hack --noconfirm;
+    pacman -S gnome aisleriot gnome-chess gnuchess gnome-mines gnome-robots gnome-sudoku quadrapassel drawing lollypop celluloid gthumb gnome-browser-connector gnome-notes endeavour vlc qt5ct kvantum ibus ibus-hangul ibus-anthy file-roller p7zip unrar unarchiver unace gnome-tweaks evolution evolution-spamassassin highlight system-config-printer gnome-shell-extension-appindicator libappindicator-gtk3 deja-dup rsync htop lm_sensors lsof strace iio-sensor-proxy gnome-tour gnome-initial-setup power-profiles-daemon firefox firefox-i18n-ko libreoffice-fresh-ko libreoffice-fresh ufw gufw polari transmission-gtk --noconfirm;
     pacman -S wine wine-mono wine-gecko winetricks samba --noconfirm;
     pacman -Rnn epiphany gnome-software gnome-music gnome-photos gnome-console totem --noconfirm;
     cp ./config-files/images/archlinux-text-logo.png /usr/share/pixmaps;
