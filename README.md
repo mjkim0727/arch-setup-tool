@@ -1,31 +1,65 @@
-# Arch Linux GNOME Setup Tool
+# Arch Linux Setup Tool
 
-This is Arch Linux GNOME Setup script.
+This is Arch Linux Setup script.
 
 Some GNOME Applications replaced another things and chaotic-aur repository is added.
 
 ## Features
 
-* Some GNOME Extensions are Out-of-the-Boxed.
 * Powered By Chaotic-AUR
 * Ubuntu Font Rendering
 * Firefox Wayland
 * No Beep Sound
 
-## Pre-installed Applications
+## Pre-installed Applications and Components
 
-* gnome group packages
-* Games(Aisleriot, Robots, Quadrapassel, Mines, Chess, Sudoku)
-* Firefox
-* htop
-* Celluloid(Replace totem)
-* Lollypop(Replace gnome-music, rhythmbox)
-* Drawing
-* Rnote
-* Gradience
-* GDM Settings
+### GNOME/KDE/Xfce
 
-## Pre-installed Features
-
+* VLC Media Player
+* Htop
+* Firefox(Epiphany's replacement for GNOME)
 * Wine
-* 
+* PipeWire + Wireplumber
+* Some Nerd Fonts
+
+### GNOME
+
+ibus Input Method + MoreWaita icons with GNOME Default Layouts
+
+* Rnote
+* Lollypop
+* Pamac(Replacement for GNOME Software)
+* Celluloid(Replacement for Gnome Videos/totem)
+* Drawing
+* Notes
+* Endeavour
+* Evoultion
+* Polari
+* Deja Dup
+* gThumb
+* gufw(Default Firewall)
+* Transmissions
+* GDM Settings
+* GNOME Terminal(Replacement for Console)
+* Gradience
+
+### KDE
+
+Fcitx5 with Default Theme
+
+* Elisa
+* Gwenview
+* Okular
+* digiKam
+* Kontact
+* Dolphin
+* Konsole
+* Kate
+* Kjots
+* Zanshin
+* Kalendar
+* Ktorrent
+
+### Xfce
+
+(With in Progress. Display Manager will be LightDM + Slick Greeter.)
